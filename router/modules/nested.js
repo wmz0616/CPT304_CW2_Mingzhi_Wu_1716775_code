@@ -8,7 +8,7 @@ const nestedRouter = {
   redirect: '/nested/menu1/menu1-1',
   name: 'Nested',
   meta: {
-    title: 'Nested Routes',
+    title: 'Countries and Area',
     icon: 'nested'
   },
   children: [
@@ -30,19 +30,19 @@ const nestedRouter = {
           component: () => import('@/views/nested/menu1/menu1-2'),
           name: 'Menu1-2',
           redirect: '/nested/menu1/menu1-2/menu1-2-1',
-          meta: { title: 'Anhui Province' },
+          meta: { title: 'Hebei Province' },
           children: [
             {
               path: 'menu1-2-1',
               component: () => import('@/views/nested/menu1/menu1-2/menu1-2-1'),
               name: 'Menu1-2-1',
-              meta: { title: 'Hefei' }
+              meta: { title: 'Shijiazhuang City' }
             },
             {
               path: 'menu1-2-2',
               component: () => import('@/views/nested/menu1/menu1-2/menu1-2-2'),
               name: 'Menu1-2-2',
-              meta: { title: 'Wuhu' }
+              meta: { title: 'Chengde City' }
             }
           ]
         },
@@ -50,7 +50,7 @@ const nestedRouter = {
           path: 'menu1-3',
           component: () => import('@/views/nested/menu1/menu1-3'),
           name: 'Menu1-3',
-          meta: { title: 'Menu 1-3' }
+          meta: { title: 'Tianjin' }
         }
       ]
     },
@@ -58,7 +58,7 @@ const nestedRouter = {
       path: 'menu2',
       name: 'Menu2',
       component: () => import('@/views/nested/menu2/index'),
-      meta: { title: 'Menu 2' }
+      meta: { title: 'United States' }
     }
   ]
 }

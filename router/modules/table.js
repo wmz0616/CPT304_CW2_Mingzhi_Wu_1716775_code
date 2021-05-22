@@ -3,6 +3,8 @@
 import Layout from '@/layout'
 
 const tableRouter = {
+  hidden: true,
+
   path: '/table',
   component: Layout,
   redirect: '/table/complex-table',
