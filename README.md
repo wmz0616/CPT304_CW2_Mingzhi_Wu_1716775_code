@@ -3,6 +3,7 @@
 Solution deployment steps
 
 Open the terminal and enter the project root directory.
+
 Command: npm install
 Command: npm run serve
 Open the URL shown in the terminal output in Chrome
